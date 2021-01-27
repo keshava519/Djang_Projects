@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/demo.css "%}">
+    <title></title>
+  </head>
+  <body>
+    <h1>Customer Details</h1>
+    {% if customer_list %}
+    <table>
+      <thead>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>CITY</th>
+        <th>NUMBER</th>
+
+      </thead>
+      {% for item in customer_list %}
+      <tr>
+        <td>{{item.cname}}</td>
+        <td>{{item.cage}}</td>
+        <td>{{item.clocaton}}</td>
+        <td>{{item.cno}}</td>
+      </tr>
+      {% endfor%}
+    </table>
+    {% else%}
+    <p>Not Applicable</p>
+    {%endif%}
+  </body>
+</html>

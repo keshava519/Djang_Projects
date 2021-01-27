@@ -1,0 +1,13 @@
+img{
+  height: 150px;
+  width: 150px;
+  border: 2px red groove;
+
+}
+h1{
+  color: red;
+  text-align: center;
+  background-color: cyan;
+  border:2px black groove;
+
+}

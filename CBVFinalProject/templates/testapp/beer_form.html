@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+     {% block base_block%}
+     <div class="jumbotron">
+       <h1>Create/Add New Beer</h1>
+       <form  method="post">
+         {{form.as_p}}
+         {%csrf_token%}
+
+         <input type="submit" class='btn btn-primary' value="Add Beer/Update">
+
+         </form>
+
+     </div>
+     {% endblock%}

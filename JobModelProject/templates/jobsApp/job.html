@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+    <title></title>
+  </head>
+  <body>
+    <h1>Keshava Jobs Notification</h1>
+    {% if job_list %}
+    <table>
+      <thead>
+        <th>DATE</th>
+        <th>SALARY</th>
+        <th>QUALIFICATION</th>
+        <th>LOCATION</th>
+      </thead>
+      {% for job in job_list%}
+      <tr>
+        <td>{{job.jobdate}}</td>
+        <td>{{job.offeredsalary}}</td>
+        <td>{{job.qualification}}</td>
+        <td>{{job.location}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else%}
+    <p>Not Available</p>
+    {% endif %}
+
+  </body>
+</html>

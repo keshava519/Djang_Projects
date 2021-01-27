@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+     {% block base_block%}
+     <div class="jumbotron">
+       <h1>Beer Details...</h1>
+       <h2>
+         <ul>
+           <li>Brand Name:{{beer.brand}}</li>
+           <li>Taste :{{beer.taste}}</li>
+           <li>Color :{{beer.color}}</li>
+           <li>Price :{{beer.price}}</li>
+         </ul>
+       </h2>
+     </div>
+     {% endblock%}

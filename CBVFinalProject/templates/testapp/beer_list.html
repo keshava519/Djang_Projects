@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+     {% block base_block%}
+     <div class="jumbotron">
+       <h1>List of Beers Available</h1>
+       <h2>
+         <table border='3'>
+           <thead>
+             <th>Brand Name</th>
+             <th>Details</th>
+             <th>Update</th>
+             <th>Delete</th>
+           </thead><hr>
+           {% for beer in beer_list%}
+           <tr>
+             <td>{{beer.brand}}</td>
+             <td><a href="{{beer.id}}">Details</a></td>
+             <td> <a href="/update/{{beer.id}}">Update</a></td>
+             <td> <a href="/delete/{{beer.id}}">Delete</a></td>
+           </tr>
+           {%endfor%}
+
+         </table><br><br>
+       </h2>
+
+
+     </div>
+     <a href="/create" class='btn btn-primary'>Do you want to Create New Beer</a>
+
+     {% endblock%}

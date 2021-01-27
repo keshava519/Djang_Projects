@@ -1,0 +1,25 @@
+.container .jumbotron{
+  background: red;
+  color: white;
+  margin-top: 150px;
+}
+body{
+  background:
+  url(https://images.unsplash.com/photo-1435777940218-
+  be0b632d06db?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1w
+  YWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=889&q=80)
+  background-repeat:no-repeat;
+
+}
+h1{
+  color: blue;
+  text-align: center;
+}
+ul{
+  color: blue;
+  font-size: 20px;
+}
+img{
+  height: 250px;
+  width: 40%
+}

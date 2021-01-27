@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% for r in view_list%}:
+    <ul>
+      <li>{{r.name|upper}}</li>
+      <li>{{r.subject|add:" Keshava"}}</li>
+      <li>{{r.dept|title}}</li>
+      <li>{{r.date|timesince}}</li>
+    </ul><hr>
+    {% endfor %}
+
+  </body>
+</html>

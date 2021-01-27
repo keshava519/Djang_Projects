@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%extends 'blog/base.html'%}
+{%block title_block%}Keshava's Blog Home Page{%endblock%}
+  {%block content%}
+  {%if sent%}
+  <h1>Email Successfully sent!!!</h1>
+  <h2>Post with title: {{post.title}} information shared by Email!!</h2>
+
+  {%else%}
+     <h1>Share Post with title: {{post.title}} By Email!!!</h1>
+
+     <form method="POST" >
+       {{form.as_p}}
+       {%csrf_token%}
+       <input type="submit" class="btn btn-primary btn-lg" value="Send Mail">
+
+     </form>
+{%endif%}
+
+
+  {%endblock%}

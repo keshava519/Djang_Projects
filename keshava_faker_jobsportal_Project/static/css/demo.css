@@ -1,0 +1,25 @@
+body{
+  background-image: url(https://beautifulcoolwallpapers.files.wordpress.com/2011/07/naturewallpaper.jpg);
+
+}
+h1{
+  text-align: center;
+  color: red;
+  background: cyan;
+
+}
+table{
+  border: 2px solid red;
+  align-items: center;
+}
+td.table{
+  border-radius: 2px solid red;
+}
+.container{
+  margin-top: 200px;
+
+}
+.jumbotron a{
+  background: red;
+  border: 2px solid blue;
+}

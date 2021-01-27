@@ -1,0 +1,40 @@
+.content{
+  width: 60%;
+  float: left;
+  padding: 0 0 0 30px;
+  background-color: yellow;
+
+}
+
+.sidebar{
+  width: 40%;
+  float: right;
+  padding: 10px;
+  background-color: cyan;
+  color: #ff0066;
+}
+h1{
+  text-align: center;
+  border-bottom: 2px solid green;
+  padding-bottom: 10px;
+}
+body{
+  color: indigo;
+  background: yellow;
+}
+#date{
+  color: navy;
+  font-style: italic;
+  font-size: 16px;
+}
+#ch{
+  color: lightgreen;
+  font-style: italic;
+  font-size: 30px;
+  border-bottom: 2px solid red;
+}
+#pcount{
+  font-size: 40px;
+  color: green;
+  font-weight: bold;
+}

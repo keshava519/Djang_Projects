@@ -1,0 +1,31 @@
+body{
+  background-image: url(https://beautifulcoolwallpapers.files.wordpress.com/2011/08/naturewallpaper.jpg);
+
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+h1{
+  text-align: center;
+  color: black;
+  background: orange;
+  font-size: 50px;
+
+}
+td,table{
+  margin: auto;
+  background: cyan;
+  border: 3px solid red;
+  color: indigo;
+  font-size: 25px;
+}
+thead{
+  background: indigo;
+  color:white;
+}
+.container.jumbotron{
+
+  margin-top: 200px;
+  background: red;
+  color: red;
+
+}

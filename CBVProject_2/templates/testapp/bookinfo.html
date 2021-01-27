@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+      {% block body_block%}
+      <h1>Books Information  Modified default template_name and context_object_name</h1>
+      {% for book in list_of_books%}
+      <ul>
+        <li>Name of Book: {{book.title}}</li>
+        <li>Author of Book: {{book.author}}</li>
+        <li>Number of Pages: {{book.pages}}</li>
+        <li>Price of Book: {{book.price}}</li>
+      </ul>
+      {%endfor%}
+              {% endblock%}
